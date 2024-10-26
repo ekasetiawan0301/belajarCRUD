@@ -17,24 +17,20 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         Anggota::create([
-            'nama' => 'eka setiawan',
+            'nama' => 'Eka setiawan',
             'hp' => '08123334445'
         ]);
         Anggota::create([
-            'nama' => 'danuarta',
-            'hp' => '0812333787'
+            'nama' => 'Danuarta',
+            'hp' => '08132525245'
         ]);
         Anggota::create([
-            'nama' => 'danuarta',
-            'hp' => '0812333787'
+            'nama' => 'willy andrian',
+            'hp' => '08123334445'
         ]);
         Anggota::create([
-            'nama' => 'danuarta',
-            'hp' => '0812333787'
-        ]);
-        Anggota::create([
-            'nama' => 'wily andrian',
-            'hp' => '089087887'
+            'nama' => 'Arnanda',
+            'hp' => '08123334445'
         ]);
     }
 }

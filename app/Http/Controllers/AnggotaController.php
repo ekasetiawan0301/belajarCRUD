@@ -30,7 +30,9 @@ class AnggotaController extends Controller
      */
     public function create()
     {
-        //
+        return view('v_anggota.creatye', [
+            'judul'=> 'Tambah Anggota'
+        ]);
     }
 
     /**
@@ -38,7 +40,7 @@ class AnggotaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
