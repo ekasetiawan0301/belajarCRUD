@@ -9,7 +9,7 @@
 
 <body>
   <h3>{{ $judul }}</h3>  
-  <form actin= "{{ route('kategori.store') }}" method="POST">
+  <form action= "{{ route('kategori.store') }}" method="POST">
     @csrf
     <label>Nama</label><br>
     <input type="text" name="nama" id="" placeholder="Masukan Nama Lengkap" value="{{ old('nama') }}">

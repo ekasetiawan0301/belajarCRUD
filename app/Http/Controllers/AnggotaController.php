@@ -12,17 +12,11 @@ class AnggotaController extends Controller
      */
     public function index()
     {
-        $anggota = Anggota::orderBy('id','desc')->get();
-        $data =[
-        'judul'=>'Data Anggota',
-        'index'=> $anggota
-        ];
-        
-        return view('v_anggota.index',$data);
-
-        // return view ('v_anggota.index',[
-        //     'judul'=>'Data Anggota',
-        //     'index'=> $anggota]); 
+        $anggota = Anggota::orderBy('id', 'desc')->get();
+        return view('v_anggota.index', [
+            'judul' => 'Data Anggota',
+            'index' => $anggota
+        ]);
     }
 
     /**
@@ -30,8 +24,8 @@ class AnggotaController extends Controller
      */
     public function create()
     {
-        return view('v_anggota.creatye', [
-            'judul'=> 'Tambah Anggota'
+        return view('v_anggota.create', [
+            'judul' => 'Tambah Anggota'
         ]);
     }
 
