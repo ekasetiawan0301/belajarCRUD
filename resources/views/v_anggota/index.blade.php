@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    (h3){{ $judul }}</h3>
+    <h3>{{ $judul }}</h3>
     <a href="{{ route('anggota.create') }}">
         <button type="button">Tambah</button>
     </a>
@@ -32,7 +32,7 @@
                     <form action="{{ route('anggota.destroy', $row->id) }}"method="POST" style="display: inline-block">
                         @method('delete')
                         @csrf
-                        <button type="submit">hapus</button>
+                        <button type="submit">Hapus</button>
                     </form>
                 </td>
             </tr>

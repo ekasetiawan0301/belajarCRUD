@@ -15,7 +15,7 @@
     <input type="text" name="nama" id="" placeholder="Masukan Nama Lengkap" value="{{ old('nama') }}">
     <br><br>
 
-    <label>hp</label>
+    <label>Hp</label>
     <input type="text" name="hp" id="" placeholder="Masukan nomor HP" value="{{ old('hp') }}">
     <br><br>
 

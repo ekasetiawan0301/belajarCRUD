@@ -12,7 +12,7 @@ class AnggotaController extends Controller
      */
     public function index()
     {
-        $anggota = Anggota::orderBy('id', 'desc')->get();
+        $anggota = Anggota::orderBy('id','desc')->get();
         return view('v_anggota.index', [
             'judul' => 'Data Anggota',
             'index' => $anggota
